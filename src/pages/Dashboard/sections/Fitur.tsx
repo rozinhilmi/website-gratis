@@ -19,16 +19,16 @@ const Fitur = (props: { fitur: any }) => {
         <Thead bgColor={"rgb(49, 130, 206)"}>
           <Tr>
             <Th color={primaryTextColor()}>Fitur</Th>
-            <Th isNumeric color={primaryTextColor()}>
-              Harga
-            </Th>
+            <Th color={primaryTextColor()}>Harga</Th>
           </Tr>
         </Thead>
         <Tbody>
           {props.fitur.map((row: any, index: number) => (
             <Tr key={index}>
               <Td>{row.nama_fitur}</Td>
-              <Td isNumeric>{convertToBillNumber(row.price)}</Td>
+              <Td fontSize={{ base: "12px", sm: "16px" }}>
+                {convertToBillNumber(row.price)}
+              </Td>
             </Tr>
           ))}
         </Tbody>

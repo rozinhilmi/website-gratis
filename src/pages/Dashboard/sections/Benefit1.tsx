@@ -40,7 +40,7 @@ const Benefit1 = () => {
         </Text>
       </Stack>
       <Grid
-        gridTemplateColumns={"repeat(2, 1fr)"}
+        gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
         width={{ base: "100%", lg: "50%" }}
         gap={"20px"}
       >
