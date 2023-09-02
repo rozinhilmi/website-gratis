@@ -25,7 +25,12 @@ const Navbar = (props: { admin_chat: any }) => {
         boxShadow={"rgba(0, 0, 0, 0.16) 0px 1px 4px"}
         fontSize={"14px"}
       >
-        <Image src="/assets/Logo.png" width={"40px"} objectFit={"contain"} />
+        <Image
+          src="/assets/Logo.png"
+          width={"40px"}
+          objectFit={"contain"}
+          loading="lazy"
+        />
 
         <HStack gap={"30px"} display={{ base: "none", lg: "flex" }}>
           <HStack gap={"15px"}>
@@ -98,7 +103,12 @@ const Navbar = (props: { admin_chat: any }) => {
         zIndex={"11"}
       >
         <HStack justifyContent={"space-between"}>
-          <Image src="/assets/Logo.png" width={"40px"} objectFit={"contain"} />
+          <Image
+            src="/assets/Logo.png"
+            width={"40px"}
+            objectFit={"contain"}
+            loading="lazy"
+          />
           <Button
             colorScheme="whiteAlpha"
             variant={"outline"}

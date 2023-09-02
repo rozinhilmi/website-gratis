@@ -64,6 +64,7 @@ const Carousel = (props: { admin_chat: any; carousel_content: any }) => {
               src={`/assets/${item}`}
               height={"40px"}
               objectFit={"contain"}
+              loading="lazy"
             />
           ))}
         </HStack>
