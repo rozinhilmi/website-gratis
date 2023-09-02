@@ -12,6 +12,7 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 const Question = (props: { admin_chat: any; questions: any }) => {
   return (
     <Stack
@@ -84,9 +85,14 @@ const Question = (props: { admin_chat: any; questions: any }) => {
               Konsultasi bersama team marketing kami untuk segera membuat
               website anda sendiri
             </Text>
-            <Button gap={"5px"} colorScheme="whatsapp" width={"full"}>
-              Kirim Pesan ke Whatsapp <BsWhatsapp />
-            </Button>
+            <Link
+              to={`https://wa.me/${props.admin_chat.phone}?text=${props.admin_chat.chat}`}
+              style={{ width: "100%" }}
+            >
+              <Button gap={"5px"} colorScheme="whatsapp" width={"full"}>
+                Kirim Pesan ke Whatsapp <BsWhatsapp />
+              </Button>
+            </Link>
           </Stack>
         </GridItem>
       </Grid>
