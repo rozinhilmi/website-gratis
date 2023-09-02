@@ -40,7 +40,7 @@ const index = () => {
             admin_chat={data.admin_chat}
             carousel_content={data.carousel_content}
           />
-          <Benefit1 />
+          <Benefit1 benefit1={data.benefit1} />
           <Benefit2 benefit2={data.benefit2} />
           <Benefit3 benefit3={data.benefit3} />
           <Fitur fitur={data.fitur} />

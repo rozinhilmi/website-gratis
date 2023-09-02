@@ -10,7 +10,6 @@ const Fitur = (props: { fitur: any }) => {
     <Stack
       margin={{ base: "15px", lg: "30px" }}
       bg={secondaryColor()}
-      // margin={{ base: "0px", md: "20px" }}
       borderRadius={"12px"}
       id="Fitur"
       gap={"30px"}
@@ -35,8 +34,6 @@ const Fitur = (props: { fitur: any }) => {
       </Table>
     </Stack>
   );
-
-  // <pre>{JSON.stringify(props.fitur, null, 2)}</pre>
 };
 
 export default Fitur;

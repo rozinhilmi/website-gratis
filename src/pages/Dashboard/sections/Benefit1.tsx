@@ -9,7 +9,37 @@ import {
 import { MdVerified, MdAccessTimeFilled } from "react-icons/md";
 import { FaWallet } from "react-icons/fa";
 import { BsLaptopFill } from "react-icons/bs";
-const Benefit1 = () => {
+const Benefit1 = (props: { benefit1: any }) => {
+  const benefit = [
+    {
+      title: "Sudah Teroptimasi",
+      description:
+        "Website yang kami buat untukmu sudah dioptimisasi dengan baik!",
+      icon: <MdVerified />,
+      colorcheme: "green",
+    },
+    {
+      title: "Hemat Waktu",
+      description:
+        "Proses cepat dan tidak memakan waktu, segera luncurkan layananmu sendiri!",
+      icon: <MdAccessTimeFilled />,
+      colorcheme: "blue",
+    },
+    {
+      title: "Hemat Anggaran",
+      description:
+        "Membuat layanan topup dari nol akan memakan anggaran yang banyak, bersama kami menjadi hemat!",
+      icon: <FaWallet />,
+      colorcheme: "purple",
+    },
+    {
+      title: "Profesional Website",
+      description:
+        "Website yang profesional membuat customer anda nyaman dan senang!",
+      icon: <BsLaptopFill />,
+      colorcheme: "orange",
+    },
+  ];
   return (
     <HStack
       padding={{ base: "15px", lg: "30px" }}
@@ -23,7 +53,7 @@ const Benefit1 = () => {
     >
       <Stack width={{ base: "100%", lg: "50%" }}>
         <Text as={"b"} fontSize={{ md: "1xl" }} color={primaryTextColor()}>
-          Alasan membangun website bersama kami
+          {props.benefit1.heading2}
         </Text>
 
         <Text
@@ -31,101 +61,36 @@ const Benefit1 = () => {
           fontSize={{ base: "2xl", md: "4xl" }}
           color={primaryTextColor()}
         >
-          Website Hemat, Professional & Tepat
+          {props.benefit1.heading1}
         </Text>
-        <Text color={secondaryTextColor()}>
-          Bersama kami, anda mendapatkan website dalam waktu yang cepat, hemat
-          anggaran, serta website yang sudah kami optimisasi dan tampilan
-          layanan yang profesional!
-        </Text>
+        <Text color={secondaryTextColor()}>{props.benefit1.description}</Text>
       </Stack>
       <Grid
         gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
         width={{ base: "100%", lg: "50%" }}
         gap={"20px"}
       >
-        <Stack
-          bgColor={secondaryColor()}
-          borderRadius={"12px"}
-          padding={"20px"}
-        >
-          <IconButton
-            width={"40px"}
-            borderRadius={"50px"}
-            aspectRatio={"1/1"}
-            colorScheme="green"
-            aria-label="icon"
-            icon={<MdVerified />}
-          />
-          <Text as={"b"} color={primaryTextColor()}>
-            Sudah Teroptimasi
-          </Text>
-          <Text color={secondaryTextColor()}>
-            Website yang kami buat untukmu sudah dioptimisasi dengan baik!
-          </Text>
-        </Stack>
-        <Stack
-          bgColor={secondaryColor()}
-          borderRadius={"12px"}
-          padding={"20px"}
-        >
-          <IconButton
-            width={"40px"}
-            borderRadius={"50px"}
-            aspectRatio={"1/1"}
-            colorScheme="blue"
-            aria-label="icon"
-            icon={<MdAccessTimeFilled />}
-          />
-          <Text as={"b"} color={primaryTextColor()}>
-            Hemat Waktu
-          </Text>
-          <Text color={secondaryTextColor()}>
-            Proses cepat dan tidak memakan waktu, segera luncurkan layananmu
-            sendiri!
-          </Text>
-        </Stack>
-        <Stack
-          bgColor={secondaryColor()}
-          borderRadius={"12px"}
-          padding={"20px"}
-        >
-          <IconButton
-            width={"40px"}
-            borderRadius={"50px"}
-            aspectRatio={"1/1"}
-            colorScheme="purple"
-            aria-label="icon"
-            icon={<FaWallet />}
-          />
-          <Text as={"b"} color={primaryTextColor()}>
-            Hemat Anggaran
-          </Text>
-          <Text color={secondaryTextColor()}>
-            Membuat layanan topup dari nol akan memakan anggaran yang banyak,
-            bersama kami menjadi hemat!
-          </Text>
-        </Stack>
-        <Stack
-          bgColor={secondaryColor()}
-          borderRadius={"12px"}
-          padding={"20px"}
-        >
-          <IconButton
-            width={"40px"}
-            borderRadius={"50px"}
-            aspectRatio={"1/1"}
-            colorScheme="orange"
-            aria-label="icon"
-            icon={<BsLaptopFill />}
-          />
-          <Text as={"b"} color={primaryTextColor()}>
-            Profesional Website
-          </Text>
-          <Text color={secondaryTextColor()}>
-            Website yang profesional membuat customer anda nyaman dan senang!
-          </Text>
-        </Stack>
+        {benefit.map((item: any, index: number) => (
+          <Stack
+            bgColor={secondaryColor()}
+            borderRadius={"12px"}
+            padding={"20px"}
+            key={index}
+          >
+            <IconButton
+              width={"40px"}
+              borderRadius={"50px"}
+              aspectRatio={"1/1"}
+              colorScheme={item.colorcheme}
+              aria-label="icon"
+              icon={item.icon}
+            />
+            <Text as={"b"} color={primaryTextColor()}>
+              {item.title}
+            </Text>
+            <Text color={secondaryTextColor()}>{item.description}</Text>
+          </Stack>
+        ))}
       </Grid>
     </HStack>
   );

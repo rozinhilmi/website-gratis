@@ -37,15 +37,14 @@ const Benefit2 = (props: { benefit2: any }) => {
       <Grid
         gridTemplateColumns={{
           base: "repeat(1, 1fr)",
-          md: "repeat(2, 1fr)",
-          lg: "repeat(3, 1fr)",
+          sm: "repeat(2,1fr)",
+          md: "repeat(3, 1fr)",
         }}
         gap={"20px"}
       >
         {props.benefit2.benefits.map((item: any, index: number) => (
           <Stack
             key={index}
-            // width={{ base: "100%", md: "47%", lg: "30%" }}
             padding={"20px"}
             borderRadius={"12px"}
             bgColor={secondaryColor()}
@@ -59,29 +58,6 @@ const Benefit2 = (props: { benefit2: any }) => {
           </Stack>
         ))}
       </Grid>
-      {/* <HStack
-        flexWrap={"wrap"}
-        justifyContent={"space-evenly"}
-        gap={"20px"}
-        alignItems={"flex-start"}
-      >
-        {props.benefit2.benefits.map((item: any, index: number) => (
-          <Stack
-            key={index}
-            width={{ base: "100%", md: "47%", lg: "30%" }}
-            padding={"20px"}
-            borderRadius={"12px"}
-            bgColor={secondaryColor()}
-            gap={"20px"}
-          >
-            <Text fontSize={"xl"} as={"b"} color={primaryTextColor()}>
-              {item.title}
-            </Text>
-            <Text color={secondaryTextColor()}>{item.description}</Text>
-            <Image src={`/assets/${item.src}`} loading="lazy" />
-          </Stack>
-        ))}
-      </HStack> */}
     </Stack>
   );
 };
