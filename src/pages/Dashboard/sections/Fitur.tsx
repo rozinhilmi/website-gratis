@@ -24,11 +24,9 @@ const Fitur = (props: { fitur: any }) => {
         </Thead>
         <Tbody>
           {props.fitur.map((row: any, index: number) => (
-            <Tr key={index}>
+            <Tr key={index} fontSize={{ base: "9px", sm: "16px" }}>
               <Td>{row.nama_fitur}</Td>
-              <Td fontSize={{ base: "12px", sm: "16px" }}>
-                {convertToBillNumber(row.price)}
-              </Td>
+              <Td>{convertToBillNumber(row.price)}</Td>
             </Tr>
           ))}
         </Tbody>
