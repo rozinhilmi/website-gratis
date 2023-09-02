@@ -45,8 +45,12 @@ const ContactUs = (props: { admin_chat: any }) => {
           <form
             onSubmit={(e) => {
               e.preventDefault();
+              var message = props.admin_chat.chat_with_identity;
+              message = message.replace("$nama", namaInput);
+              message = message.replace("$nama_toko", tokotInput);
+              message = message.replace("$link_social_media", socialMediaInput);
               window.open(
-                `https://wa.me/${props.admin_chat.phone}?text=halo nama saya ${namaInput} saya dari toko ${tokotInput}, saya ingin membuat website. akun social media saya ${socialMediaInput}`,
+                `https://wa.me/${props.admin_chat.phone}?text=${message}`,
                 "_blank"
               );
             }}

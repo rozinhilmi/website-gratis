@@ -1,7 +1,8 @@
 {
   "admin_chat": {
     "phone": "62895335412735",
-    "chat": "Halo kak saya mau bikin website"
+    "chat": "Halo kak saya mau bikin website",
+    "chat_with_identity": "halo nama saya $nama saya dari toko $nama_toko, saya ingin membuat website. akun social media saya $link_social_media"
   },
   "carousel_content": {
     "heading": "Buat website topup game kamu sendiri!",
