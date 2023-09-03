@@ -132,11 +132,11 @@
   ],
   "other_services": {
     "heading": "Layanan lain yang kami tawarkan",
-    "description": "Kami juga menyediakan berbagai macam layanan bagi anda dengan berbagai macam kebutuhan. Untuk saat ini tersedia layanan VocaGame untuk topup voucher dan layanan VocaPanel bagi anda yang ingin membuat website topup",
+    "description": "Kami juga menyediakan berbagai macam layanan bagi anda dengan berbagai macam kebutuhan. Untuk saat ini tersedia layanan BP Gamestore? untuk topup voucher dan layanan VocaPanel bagi anda yang ingin membuat website topup",
     "services": [
       {
         "title": "BP Gamestore",
-        "description": "BP Gamestore menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia. Topup lebih dari 100 game online terkemuka dunia di VocaGame mudah aman tanpa registrasi, pembelian instan langsung masuk dalam hitungan detik.",
+        "description": "BP Gamestore menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia. Topup lebih dari 100 game online terkemuka dunia di BP Gamestore? mudah aman tanpa registrasi, pembelian instan langsung masuk dalam hitungan detik.",
         "src": "landingpage.png"
       },
       {
@@ -150,20 +150,20 @@
     "heading": "Pertanyaan yang sering ditanyakan",
     "questions": [
       {
-        "title": "Pertanyaan 1",
-        "description": "Pihak VocaGame menyediakan layanan hosting include dari layanan H2H yang anda beli, jadi anda tidak perlu khawatir memikirkan hal tersebut"
+        "title": "Untuk Hosting dari saya atau pihak BP Gamestore? ",
+        "description": "Pihak BP Gamestore? menyediakan layanan hosting include dari layanan H2H yang anda beli, jadi anda tidak perlu khawatir memikirkan hal tersebut"
       },
       {
-        "title": "Pertanyaan 2",
-        "description": "Untuk design dalam pengembangan website hanya menggunakan template yang disediakan dari tim VocaGame. Untuk design minor dari pembeli akan disesuaikan kembali."
+        "title": "Boleh kasih design sendiri ke BP Gamestore untuk buat website?",
+        "description": "Untuk design dalam pengembangan website hanya menggunakan template yang disediakan dari tim BP Gamestore?. Untuk design minor dari pembeli akan disesuaikan kembali."
       },
       {
-        "title": "Pertanyaan 3",
+        "title": "Apakah saya mendapatkan source code nya?",
         "description": "Dalam pengembangan website yang dinginkan pembeli, source code yang telah dikembangkan tidak akan diberikan kepada pembeli. Pembeli hanya akan mendapatkan tampilan dari template yang diinginkan."
       },
       {
-        "title": "Pertanyaan 4",
-        "description": "Jasa pembuatan website di VocaGame juga akan memberikan tampilan admin bagi pembeli guna mengatur segala transaksi yang berlangsung di website."
+        "title": "Apakah saya dapat mengatur pembelian customer?",
+        "description": "Jasa pembuatan website di BP Gamestore? juga akan memberikan tampilan admin bagi pembeli guna mengatur segala transaksi yang berlangsung di website."
       }
     ]
   }

@@ -25,9 +25,9 @@ const Carousel = (props: { admin_chat: any; carousel_content: any }) => {
     >
       <Stack
         gap={"20px"}
-        alignItems={{ base: "center", lg: "start" }}
+        alignItems={{ base: "center", md: "start" }}
         justifyContent={"center"}
-        width={{ base: "100%", lg: "50%" }}
+        width={{ base: "100%", md: "50%" }}
         maxWidth={{ md: "500px" }}
       >
         <Text
@@ -73,7 +73,7 @@ const Carousel = (props: { admin_chat: any; carousel_content: any }) => {
         </Text>
       </Stack>
       <Image
-        width={{ base: "100%", lg: "50%" }}
+        width={{ base: "100%", md: "50%" }}
         objectFit={"contain"}
         src="/assets/landingpage.png"
         loading="lazy"

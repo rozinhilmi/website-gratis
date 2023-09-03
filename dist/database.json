@@ -9,8 +9,10 @@
     "description": "Dipercaya beberapa partner terbaik kami",
     "clients": ["chakra.png", "expressjs.webp", "react.svg", "redux.svg"]
   },
-  "benefit": {
-    "title": ""
+  "benefit1": {
+    "heading1": "Website Hemat, Professional & Tepat",
+    "heading2": "Alasan membangun website bersama kami",
+    "description": "Bersama kami, anda mendapatkan website dalam waktu yang cepat, hemat anggaran, serta website yang sudah kami optimisasi dan tampilan layanan yang profesional!"
   },
   "benefit2": {
     "heading": "Benefit dan Keunggulan Membuat Website Bersama Kami",
