@@ -87,6 +87,7 @@ const Question = (props: { admin_chat: any; questions: any }) => {
             </Text>
             <Link
               to={`https://wa.me/${props.admin_chat.phone}?text=${props.admin_chat.chat}`}
+              target="_blank"
               style={{ width: "100%" }}
             >
               <Button gap={"5px"} colorScheme="whatsapp" width={"full"}>
