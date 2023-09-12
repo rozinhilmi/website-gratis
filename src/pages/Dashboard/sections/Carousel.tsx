@@ -13,7 +13,7 @@ const Carousel = (props: { admin_chat: any; carousel_content: any }) => {
       alignItems={"center"}
       justifyContent={"center"}
       width={"100%"}
-      minHeight={"700px"}
+      minHeight={{ base: "85vh", lg: "700px" }}
       paddingY={"40px"}
       gap={"5px"}
       flexWrap={"wrap"}

@@ -22,6 +22,7 @@ const Question = (props: { admin_chat: any; questions: any }) => {
       borderRadius={"12px"}
       id="Benefit2"
       gap={"30px"}
+      minHeight={{ base: "85vh", lg: "700px" }}
     >
       <Stack alignItems={"center"}>
         <Text

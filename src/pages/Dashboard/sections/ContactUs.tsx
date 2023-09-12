@@ -21,6 +21,8 @@ const ContactUs = (props: { admin_chat: any }) => {
       borderRadius={"12px"}
       id="Benefit2"
       gap={"30px"}
+      minHeight={{ base: "85vh", lg: "700px" }}
+      justifyContent={"center"}
     >
       <Grid
         gridTemplateColumns={"repeat(10, 1fr)"}
