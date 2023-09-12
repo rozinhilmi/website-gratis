@@ -40,7 +40,7 @@ const Benefit2 = (props: { benefit2: any }) => {
           sm: "repeat(2,1fr)",
           md: "repeat(3, 1fr)",
         }}
-        gap={"20px"}
+        gap={{ base: "0", lg: "20px" }}
       >
         {props.benefit2.benefits.map((item: any, index: number) => (
           <Stack

@@ -42,6 +42,7 @@ const Carousel = (props: { admin_chat: any; carousel_content: any }) => {
         </Text>
         <Link
           to={`https://wa.me/${props.admin_chat.phone}?text=${props.admin_chat.chat}`}
+          target="_blank"
         >
           <Button
             width={"300px"}
