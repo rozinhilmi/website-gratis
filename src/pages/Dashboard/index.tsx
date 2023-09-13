@@ -12,6 +12,7 @@ import OtherServices from "./sections/OtherServices";
 import Question from "./sections/Question";
 import ContactUs from "./sections/ContactUs";
 import Footer from "./sections/Footer";
+import { Helmet } from "react-helmet";
 
 const index = () => {
   const [data, setData]: any = useState();
@@ -22,35 +23,45 @@ const index = () => {
     getData();
   }, []);
   return (
-    <Stack
-      width={"100%"}
-      justifyContent={"center"}
-      alignItems={"center"}
-      backgroundColor={primaryColor()}
-    >
-      {data ? (
-        <Stack
-          width={"100%"}
-          maxWidth={"1440px"}
-          backgroundColor={primaryColor()}
-          position={"relative"}
-        >
-          <Navbar admin_chat={data.admin_chat} />
-          <Carousel
-            admin_chat={data.admin_chat}
-            carousel_content={data.carousel_content}
-          />
-          <Benefit1 benefit1={data.benefit1} />
-          <Benefit2 benefit2={data.benefit2} />
-          <Benefit3 benefit3={data.benefit3} />
-          <Fitur fitur={data.fitur} />
-          <OtherServices other_services={data.other_services} />
-          <Question admin_chat={data.admin_chat} questions={data.questions} />
-          <ContactUs admin_chat={data.admin_chat} />
-          <Footer />
-        </Stack>
-      ) : null}
-    </Stack>
+    <>
+      <Helmet>
+        <title>Webite Gratis | BP Game Store</title>
+        <meta
+          name="description"
+          content="Buat website topup gaming kamu sendiri! Bersama kami, anda mendapatkan website dalam waktu yang cepat, hemat anggaran, serta website yang sudah kami optimisasi dan tampilan layanan yang profesional!"
+        />
+        <meta name="keywords" content="example keywords" />
+      </Helmet>
+      <Stack
+        width={"100%"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        backgroundColor={primaryColor()}
+      >
+        {data ? (
+          <Stack
+            width={"100%"}
+            maxWidth={"1440px"}
+            backgroundColor={primaryColor()}
+            position={"relative"}
+          >
+            <Navbar admin_chat={data.admin_chat} />
+            <Carousel
+              admin_chat={data.admin_chat}
+              carousel_content={data.carousel_content}
+            />
+            <Benefit1 benefit1={data.benefit1} />
+            <Benefit2 benefit2={data.benefit2} />
+            <Benefit3 benefit3={data.benefit3} />
+            <Fitur fitur={data.fitur} />
+            <OtherServices other_services={data.other_services} />
+            <Question admin_chat={data.admin_chat} questions={data.questions} />
+            <ContactUs admin_chat={data.admin_chat} />
+            <Footer />
+          </Stack>
+        ) : null}
+      </Stack>
+    </>
   );
 };
 
