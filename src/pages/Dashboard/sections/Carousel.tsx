@@ -22,6 +22,7 @@ const Carousel = (props: { admin_chat: any; carousel_content: any }) => {
       bg={secondaryColor()}
       paddingX={{ base: "15px", lg: "30px" }}
       borderBottomRightRadius={"40%"}
+      flexDir={{ base: "column-reverse", md: "row" }}
     >
       <Stack
         gap={"20px"}

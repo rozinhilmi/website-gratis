@@ -50,7 +50,12 @@ const Benefit2 = (props: { benefit2: any }) => {
             bgColor={secondaryColor()}
             gap={"20px"}
           >
-            <Text fontSize={"xl"} as={"b"} color={primaryTextColor()}>
+            <Text
+              fontSize={"xl"}
+              as={"b"}
+              color={primaryTextColor()}
+              textAlign={{ base: "center", lg: "start" }}
+            >
               {item.title}
             </Text>
             <Text color={secondaryTextColor()}>{item.description}</Text>

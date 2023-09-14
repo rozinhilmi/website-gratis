@@ -51,7 +51,10 @@ const Benefit1 = (props: { benefit1: any }) => {
       gap={"30px"}
       flexDirection={{ base: "column", lg: "row-reverse" }}
     >
-      <Stack width={{ base: "100%", lg: "50%" }}>
+      <Stack
+        width={{ base: "100%", lg: "50%" }}
+        textAlign={{ base: "center", lg: "start" }}
+      >
         <Text as={"b"} fontSize={{ md: "1xl" }} color={primaryTextColor()}>
           {props.benefit1.heading2}
         </Text>
