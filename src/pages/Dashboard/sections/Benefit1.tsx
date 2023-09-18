@@ -79,6 +79,8 @@ const Benefit1 = (props: { benefit1: any }) => {
             borderRadius={"12px"}
             padding={"20px"}
             key={index}
+            alignItems={{ base: "center", md: "flex-start" }}
+            textAlign={{ base: "center", md: "start" }}
           >
             <IconButton
               width={"40px"}

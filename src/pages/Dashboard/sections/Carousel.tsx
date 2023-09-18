@@ -23,10 +23,12 @@ const Carousel = (props: { admin_chat: any; carousel_content: any }) => {
       paddingX={{ base: "15px", lg: "30px" }}
       borderBottomRightRadius={"40%"}
       flexDir={{ base: "column-reverse", md: "row" }}
+      rowGap={"20px"}
     >
       <Stack
         gap={"20px"}
-        alignItems={{ base: "center", md: "start" }}
+        alignItems={{ base: "center", lg: "start" }}
+        textAlign={{ base: "center", lg: "start" }}
         justifyContent={"center"}
         width={{ base: "100%", md: "50%" }}
         maxWidth={{ md: "500px" }}
@@ -37,7 +39,6 @@ const Carousel = (props: { admin_chat: any; carousel_content: any }) => {
           as={"b"}
           fontSize={{ base: "2xl", md: "4xl" }}
           lineHeight={"1"}
-          textAlign={{ base: "center", lg: "start" }}
         >
           {props.carousel_content.heading}
         </Text>

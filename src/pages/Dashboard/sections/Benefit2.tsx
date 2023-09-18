@@ -40,7 +40,7 @@ const Benefit2 = (props: { benefit2: any }) => {
           sm: "repeat(2,1fr)",
           md: "repeat(3, 1fr)",
         }}
-        gap={{ base: "0", lg: "20px" }}
+        gap={{ base: "5", lg: "20px" }}
       >
         {props.benefit2.benefits.map((item: any, index: number) => (
           <Stack
@@ -51,7 +51,7 @@ const Benefit2 = (props: { benefit2: any }) => {
             gap={"20px"}
           >
             <Text
-              fontSize={"xl"}
+              fontSize={"md"}
               as={"b"}
               color={primaryTextColor()}
               textAlign={{ base: "center", lg: "start" }}

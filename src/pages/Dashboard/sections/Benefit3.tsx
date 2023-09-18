@@ -49,7 +49,7 @@ const Benefit3 = (props: { benefit3: any }) => {
               <Text
                 color={primaryTextColor()}
                 as={"b"}
-                fontSize={{ base: "2xl", xl: "4xl" }}
+                fontSize={{ base: "xl", md: "2xl", xl: "4xl" }}
                 textAlign={{
                   base: "start",
                   md: index % 2 == 0 ? "end" : "start",
